@@ -9,17 +9,18 @@ import "./App.css";
 class App extends Component {
   render() {
     const MapLoader = withScriptjs(Map);
+    const key = "";
     const MapLoaders = withScriptjs(Maps);
 
     return (
       <div>
         <MapLoader
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVMEaAoUnRAY9NgI3tQZ10DdsiRcmXfV8"
+          googleMapURL=`https://maps.googleapis.com/maps/api/js?key=${key}`
           loadingElement={<div style={{ height: `50%`, width: "100%" }} />}
         />
         {/* <h2>--------------------------------------------------------------------------------------------------------------------</h2>
         <MapLoaders
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVMEaAoUnRAY9NgI3tQZ10DdsiRcmXfV8"
+          googleMapURL=`https://maps.googleapis.com/maps/api/js?key=${key}`
           loadingElement={<div style={{ height: `50%`, width: "100%" }} />}
         /> */}
       </div>
